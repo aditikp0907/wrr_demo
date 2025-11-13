@@ -1,0 +1,8 @@
+services:
+  wrr:
+    build: .
+    container_name: wrr_demo
+    volumes:
+      - .:/app
+    environment:
+      - MPLBACKEND=Agg
